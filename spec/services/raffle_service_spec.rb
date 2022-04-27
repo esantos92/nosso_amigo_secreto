@@ -2,9 +2,10 @@ require 'rails_helper'
 
 describe RaffleService do
 
-  before :each do
-    @campaign = create(:campaign, status: :pending)
-  end
+  # before :each do
+  #   @campaign = create(:campaign, status: :pending)
+  # end
+  let!(:campaign) { create(:campaign, status: :pending)}
 
   describe '#call' do
     context "when has more then two members" do

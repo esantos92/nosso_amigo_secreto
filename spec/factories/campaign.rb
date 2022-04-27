@@ -1,3 +1,6 @@
+require "ffaker"
+
+
 FactoryBot.define do
   factory :campaign do
     title         { FFaker::Lorem.word }

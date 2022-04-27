@@ -1,3 +1,5 @@
+# require "ffaker"
+
 FactoryBot.define do
   factory :member do
     name         { FFaker::Lorem.word }
